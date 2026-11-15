@@ -1,0 +1,106 @@
+{
+  "app_id": "plantumldocker",
+  "title": "PlantUML Server",
+  "image": "plantuml/plantuml-server:v1.2026.10",
+  "repo_name": "plantuml",
+  "mode": "plain",
+  "container_port": 8080,
+  "category": [
+    "Development_Tools"
+  ],
+  "volumes": [
+    {
+      "host": "/Volume1/DockerAppData/plantumldocker/data",
+      "container": "/var/lib/plantuml"
+    }
+  ],
+  "env": {
+    "TZ": "Asia/Shanghai"
+  },
+  "auth": "plantuml",
+  "upstream_url": "https://github.com/plantuml/plantuml-server",
+  "upstream_license": "GPL-3.0",
+  "descript": "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network.",
+  "release_note": "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data.",
+  "important": "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet.",
+  "probe": {
+    "user_in_image": "jetty",
+    "entrypoint": [
+      "/entrypoint.sh"
+    ],
+    "cmd": null,
+    "exposed_ports": [
+      8080
+    ],
+    "declared_volumes": [
+      "/tmp/jetty"
+    ],
+    "image_healthcheck": [],
+    "digest": "plantuml/plantuml-server@sha256:3719f4a9b0b061f1aa42d14d130388f831954ca65685d521b6c5b72301e993e6",
+    "architecture": "x86_64",
+    "platforms": [
+      "x86_64",
+      "aarch64"
+    ],
+    "http_client_in_image": "curl",
+    "trial_run": {
+      "ok": true,
+      "http_code": "302",
+      "state": "running",
+      "paths": [],
+      "host_port": 18000,
+      "log_tail": "2026-11-15 03:36:16.951:WARN :oatud.DigesterFactory:main: The XML schema [datatypes.dtd] could not be found. This is very likely to break XML validation if XML validation is enabled.\n2026-11-15 03:36:16.951:WARN :oatud.DigesterFactory:main: The XML schema [xml.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.\n2026-11-15 03:36:17.594:INFO :oejsh.ContextHandler:main: Started oeje11w.WebAppContext@6c2c1385{PlantUML,/,b=[file:///tmp/jetty-0_0_0_0-8080-plantuml_war-_-any-7336351190089962390/webapp/, jar:file:///tmp/jetty-0_0_0_0-8080-plantuml_war-_-any-7336351190089962390/webapp/WEB-INF/lib/monaco-editor-0.36.1.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@7e3060d8{STARTED}}{/plantuml.war}\n2026-11-15 03:36:17.726:INFO :oeje11s.ServletContextHandler:main: Started oeje11w.WebAppContext@6c2c1385{PlantUML,/,b=[file:///tmp/jetty-0_0_0_0-8080-plantuml_war-_-any-7336351190089962390/webapp/, jar:file:///tmp/jetty-0_0_0_0-8080-plantuml_war-_-any-7336351190089962390/webapp/WEB-INF/lib/monaco-editor-0.36.1.jar!/META-INF/resources/],a=AVAILABLE,h=oeje11s.SessionHandler@7e3060d8{STARTED}}{/plantuml.war}\n2026-11-15 03:36:17.735:INFO :oejs.DefaultSessionIdManager:main: Session workerName=node0\n2026-11-15 03:36:17.774:INFO :oejs.AbstractConnector:main: Started oejs.ServerConnector@6ffab045{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}\n2026-11-15 03:36:17.785:INFO :oejs.Server:main: Started oejs.Server@67545b57{STARTING}[12.1.6,sto=0] @5476ms",
+      "files_in_mounts": ""
+    },
+    "docker_hub": {},
+    "github": {
+      "owner": "plantuml",
+      "repo": "plantuml-server",
+      "description": "PlantUML Online Server",
+      "license": "GPL-3.0",
+      "homepage": "https://plantuml.com/"
+    }
+  },
+  "healthcheck": [
+    "CMD-SHELL",
+    "curl -s -o /dev/null http://127.0.0.1:8080/ || exit 1"
+  ],
+  "platform": "x86_64",
+  "user": "1000:1000",
+  "publisher": "Moechz",
+  "compose_project": "plantumldocker",
+  "github_repo": "plantuml",
+  "upstream_version": "1.2026.10",
+  "release_tag_prefix": "v",
+  "version": "1.2026.10-1",
+  "help": "https://github.com/Moechz/plantumlserver/issues",
+  "official": "https://github.com/plantuml/plantuml-server",
+  "license": "GPL-3.0",
+  "docker_socket": false,
+  "group_add": [],
+  "host_port": 8152,
+  "http_path": "/",
+  "healthcheck_start_period": "40s",
+  "translations": {
+    "zh-cn": {
+      "descript": "PlantUML Server 用纯文本渲染 UML 与各种图表：把文字描述（或编码后的 URL）发过去，就得到时序图、类图、活动图、组件图、状态图或部署图的 PNG/SVG。它是很多编辑器、wiki 与文档站背后的渲染引擎，渲染在 NAS 上完成，图表不会离开你的网络。",
+      "important": "需要 DockerEngine（缺失时应用中心会自动安装）。界面在 /plantuml（根路径会重定向过去）。图表源码走 URL，特别大的图请改用 POST 接口；没有需要备份的数据目录。界面为纯 HTTP，暴露到公网前请配置带 TLS 的反向代理。",
+      "release_note": "1. 首个版本：基于 Docker Hub 的 PlantUML Server 1.2026.10，以非 root 容器运行。通过 HTTP 用文本渲染 UML 图；无数据库、无持久化数据。"
+    },
+    "zh-hk": {
+      "descript": "PlantUML Server 用純文字渲染 UML 與各種圖表：把文字描述（或編碼後的 URL）送過去，就得到時序圖、類別圖、活動圖、元件圖、狀態圖或部署圖的 PNG/SVG。它是很多編輯器、wiki 與文件站背後的渲染引擎，渲染在 NAS 上完成，圖表不會離開你的網路。",
+      "important": "需要 DockerEngine（缺少時應用中心會自動安裝）。介面在 /plantuml（根路徑會重導過去）。圖表原始碼走 URL，特別大的圖請改用 POST 介面；沒有需要備份的資料目錄。介面為純 HTTP，公開到互聯網前請配置帶 TLS 的反向代理。",
+      "release_note": "1. 首個版本：基於 Docker Hub 的 PlantUML Server 1.2026.10，以非 root 容器運行。透過 HTTP 用文字渲染 UML 圖；無資料庫、無持久化資料。"
+    }
+  },
+  "data_notes": "`/var/lib/plantuml` exists only to satisfy the platform's volume requirement; the renderer keeps no state, so nothing important is stored here.",
+  "design_notes": [
+    "**Stateless.** No volumes; the image is read-only apart from its temp directory.",
+    "**Runs as the jetty user.** The image's own user already matches uid 1000."
+  ],
+  "limitations": [
+    "- Diagram source travels in the URL; very large diagrams should use the POST endpoint.",
+    "- No history or saved diagrams; it is a rendering service.",
+    "- The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+  ]
+}

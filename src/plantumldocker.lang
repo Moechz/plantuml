@@ -1,0 +1,195 @@
+# ===========================================================================
+# Multilingual file for the TOS 7 Docker application "plantumldocker".
+# File name MUST be: <appid>.lang.  23-language superset (14 required by TOS).
+# The App Center picks the text matching the user's device language;
+# untranslated nodes fall back to English, which the official guide allows.
+# Fields: name (app title), auth (upstream author), descript (up to 512
+# chars), release_note, important (up to 512 chars).
+# Translations come from tosapp.json "translations"; run
+#   tosdocker lang <app>          to re-render this file
+#   tosdocker translate <app>     to see what still needs translating
+# ===========================================================================
+[en-us]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[zh-cn]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server 用纯文本渲染 UML 与各种图表：把文字描述（或编码后的 URL）发过去，就得到时序图、类图、活动图、组件图、状态图或部署图的 PNG/SVG。它是很多编辑器、wiki 与文档站背后的渲染引擎，渲染在 NAS 上完成，图表不会离开你的网络。"
+release_note = "1. 首个版本：基于 Docker Hub 的 PlantUML Server 1.2026.10，以非 root 容器运行。通过 HTTP 用文本渲染 UML 图；无数据库、无持久化数据。"
+important    = "需要 DockerEngine（缺失时应用中心会自动安装）。界面在 /plantuml（根路径会重定向过去）。图表源码走 URL，特别大的图请改用 POST 接口；没有需要备份的数据目录。界面为纯 HTTP，暴露到公网前请配置带 TLS 的反向代理。"
+
+[zh-hk]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server 用純文字渲染 UML 與各種圖表：把文字描述（或編碼後的 URL）送過去，就得到時序圖、類別圖、活動圖、元件圖、狀態圖或部署圖的 PNG/SVG。它是很多編輯器、wiki 與文件站背後的渲染引擎，渲染在 NAS 上完成，圖表不會離開你的網路。"
+release_note = "1. 首個版本：基於 Docker Hub 的 PlantUML Server 1.2026.10，以非 root 容器運行。透過 HTTP 用文字渲染 UML 圖；無資料庫、無持久化資料。"
+important    = "需要 DockerEngine（缺少時應用中心會自動安裝）。介面在 /plantuml（根路徑會重導過去）。圖表原始碼走 URL，特別大的圖請改用 POST 介面；沒有需要備份的資料目錄。介面為純 HTTP，公開到互聯網前請配置帶 TLS 的反向代理。"
+
+[fr-fr]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[de-de]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[it-it]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[es-es]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[hu-hu]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ja-jp]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ko-kr]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[pl-pl]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ru-ru]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[tr-tr]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[pt-pt]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ar-sa]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[cs-cz]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[he-il]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[id-id]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[nb-no]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[nl-nl]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[sv-se]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[th-th]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[vi-vn]
+name         = "PlantUML Server"
+auth         = "plantuml"
+version      = "@@VERSION@@"
+descript     = "PlantUML Server renders UML and diagrams from plain text: send a text description (or an encoded URL) and get a PNG or SVG sequence, class, activity, component, state or deployment diagram back. It is the engine behind many editors, wikis and documentation sites, and it renders on the NAS so your diagrams never leave your network."
+release_note = "1. First release: PlantUML Server 1.2026.10 from Docker Hub as a non-root container. Render UML diagrams from text over HTTP; no database and no persistent data."
+important    = "Requires DockerEngine (installed automatically if missing). The UI is at /plantuml (the root redirects there). Diagram source travels in the URL, so very large diagrams should use the POST endpoint instead; there is no data folder to back up. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
